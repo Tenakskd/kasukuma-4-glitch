@@ -12,7 +12,6 @@
   "author": "wakame",
   "license": "CC-BY-4.0",
   "dependencies": {
-    "educational-u-x-v": "^1.0.10",
     "educational-br-sr": "^1.2.6",
     "cors": "^2.8.5",
     "ejs": "^3.1.10",
