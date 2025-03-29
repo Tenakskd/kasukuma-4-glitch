@@ -19,7 +19,7 @@ const bareServer = createBareServer('/outerspace/');
 const PORT = 8080;
 
 const limit = process.env.LIMIT || 50;
-const user_agent = process.env.USER_AGENT || "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36";
+const user_agent = process.env.USER_AGENT || "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15";
 
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
