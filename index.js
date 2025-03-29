@@ -109,6 +109,11 @@ const routes = [
   { path: '/help', file: 'help.html' },
 ]
 
+app.get('/image-galleries', (req, res) => {
+  res.sendFile(path.join(__dirname, 'static', 'go.html'));
+});
+
+// Existing code
 //リダイレクト
 app.get('/redirect', (req, res) => {
   const subp = req.query.p;
