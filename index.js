@@ -1,26 +1,25 @@
-import express from 'express';
-import http from 'node:http';
-import createBareServer from "educational-br-sr";
-import path from 'node:path';
-import cors from 'cors';
-import cookieParser from 'cookie-parser';
-import session from 'express-session';
-import ejs from 'ejs';
-import axios from 'axios';
-import miniget from 'miniget';
-import ytpl from 'ytpl';
-import ytsr from 'ytsr';
-import bodyParser from 'body-parser';
+const express = require('express');
+const http = require('node:http');
+const createBareServer = require("educational-br-sr");
+const path = require('node:path');
+const cors = require('cors');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
+const ejs = require('ejs');
+const axios = require('axios');
+const miniget = require('miniget');
+const ytpl = require('ytpl');
+const ytsr = require('ytsr');
+const bodyParser = require('body-parser');
+
 
 const __dirname = process.cwd();
 const server = http.createServer();
 const app = express(server);
 const bareServer = createBareServer('/outerspace/');
 const PORT = 8080;
-
-21| const limit = process.env.LIMIT || 50;
-22| const user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15";
-23| 
+const limit = process.env.LIMIT || 50;
+const user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15";
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
