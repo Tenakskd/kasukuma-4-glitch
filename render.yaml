@@ -1,11 +1,11 @@
 version: 1
 services:
   - type: web
-    name: わかめtube
+    name: kasu
     env: docker
     plan: free
-    buildCommand: npm install
-    startCommand: npm start
+    buildCommand: yarn
+    startCommand: yarn start
     autoDeploy: true
     envVars:
       - key: NODE_VERSION
