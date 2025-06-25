@@ -8,4 +8,3 @@ self.__uv$config = {
     config: '/contact/geography.js',
     sw: '/contact/english.js'
 };
-document.title = '';
