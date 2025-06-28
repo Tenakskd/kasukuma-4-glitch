@@ -18,7 +18,7 @@ const app = express(server);
 const bareServer = createBareServer('/bare/')
 const PORT = 8080;
 const limit = process.env.LIMIT || 50;
-const user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15";
+const user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15";
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
@@ -98,13 +98,10 @@ function parseCookies(request) {
 const routes = [
   { path: '/', file: 'index.html' },
   { path: '/news', file: 'apps.html' },
-  { path: '/g/app', file: 'game.html' },
-  { path: '/events', file: 'games.html' },
   { path: '/send', file: 'send.html' },
   { path: '/local-news', file: 'tabs.html' },
   { path: '/tools', file: 'tool.html' },
   { path: '/image-galleries', file: 'go.html' },
-  { path: '/help', file: 'help.html' },
 ]
 
 app.get('/image-galleries', (req, res) => {
