@@ -40,7 +40,7 @@ app.use((req, res, next) => {
     }
 });
 
-app.use(express.static(path.join(__dirname, 'static')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 //ログイン済み？
 app.get('/login/if', async (req, res) => {
@@ -103,7 +103,7 @@ const routes = [
 ]
 
 app.get('/image-galleries', (req, res) => {
-  res.sendFile(path.join(__dirname, 'static', 'go.html'));
+  res.sendFile(path.join(__dirname, 'public', 'go.html'));
 });
 
 // Existing code
